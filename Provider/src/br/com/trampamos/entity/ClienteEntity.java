@@ -8,7 +8,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "HRL_CLIENTE")
 @SequenceGenerator(name = "seq_cliente", sequenceName = "SQ_HRL_CLIENTE", allocationSize = 1)
-public class Cliente {
+public class ClienteEntity {
 	
 	@Column(name = "cd_pessoa")
 	private int codigoPessoa;
