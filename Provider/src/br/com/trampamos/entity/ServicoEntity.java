@@ -16,7 +16,7 @@ public class ServicoEntity {
 	private int codigoServico;
 	
 	@Column(name = "cd_pessoa")
-	private int codigoPessoa; 
+	private PessoaEntity prestador; 
 	
 	@Column(name ="ds_servico", nullable = false, length = 100)
 	private String servico;
@@ -31,13 +31,6 @@ public class ServicoEntity {
 		this.codigoServico = codigoServico;
 	}
 
-	public int getCodigoPessoa() {
-		return codigoPessoa;
-	}
-
-	public void setCodigoPessoa(int codigoPessoa) {
-		this.codigoPessoa = codigoPessoa;
-	}
 
 	public String getServico() {
 		return servico;
@@ -45,6 +38,14 @@ public class ServicoEntity {
 
 	public void setServico(String servico) {
 		this.servico = servico;
+	}
+
+	public PessoaEntity getPrestador() {
+		return prestador;
+	}
+
+	public void setPrestador(PessoaEntity prestador) {
+		this.prestador = prestador;
 	}
 	
 	

@@ -11,5 +11,13 @@ import javax.persistence.Table;
 public class ClienteEntity {
 	
 	@Column(name = "cd_pessoa")
-	private int codigoPessoa;
+	private PessoaEntity cliente;
+
+	public PessoaEntity getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(PessoaEntity cliente) {
+		this.cliente = cliente;
+	}
 }

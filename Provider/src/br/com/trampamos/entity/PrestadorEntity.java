@@ -11,11 +11,37 @@ import javax.persistence.Table;
 public class PrestadorEntity {
 	
 	@Column(name = "cd_pessoa")
-	private int codigoPessoa;
+	private PessoaEntity prestador;
 
 	@Column(name = "cd_logradouro")
 	private int codigoLogradouro;
 	
 	@Column(name = "ds_cep", nullable = false, length = 11)
 	private String cep;
+
+	public PessoaEntity getPrestador() {
+		return prestador;
+	}
+
+	public void setPrestador(PessoaEntity prestador) {
+		this.prestador = prestador;
+	}
+
+	public int getCodigoLogradouro() {
+		return codigoLogradouro;
+	}
+
+	public void setCodigoLogradouro(int codigoLogradouro) {
+		this.codigoLogradouro = codigoLogradouro;
+	}
+
+	public String getCep() {
+		return cep;
+	}
+
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+	
+	
 }
