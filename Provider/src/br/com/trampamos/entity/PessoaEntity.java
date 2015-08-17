@@ -13,7 +13,7 @@ public class PessoaEntity {
 	
 	@Id
 	@Column(name = "cd_pessoa")
-	private int codigo;
+	private int codigoPessoa;
 	
 	@Column(name = "nm_nome", nullable = false, length = 40)
 	private String nome;
@@ -25,11 +25,11 @@ public class PessoaEntity {
 	private String email;
 
 	public int getCodigo() {
-		return codigo;
+		return codigoPessoa;
 	}
 
 	public void setCodigo(int codigo) {
-		this.codigo = codigo;
+		this.codigoPessoa = codigo;
 	}
 
 	public String getNome() {
